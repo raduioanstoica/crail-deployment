@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://zac01-ib:9000</value>
+  </property>
+
+  <property> 
+    <name>dfs.replication</name> 
+    <value>1</value> 
+  </property>
+
+  <property>
+    <name>fs.crail.impl</name>
+    <value>org.apache.crail.hdfs.CrailHadoopFileSystem</value>
+  </property>
+
+  <property>
+    <name>fs.AbstractFileSystem.crail.impl</name>
+    <value>org.apache.crail.hdfs.CrailHDFS</value>
+  </property>
+
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>${USER}/zac/hadoop-tmp</value>
+  </property>
+
+</configuration>
